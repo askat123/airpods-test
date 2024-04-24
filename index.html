@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slider</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header">
+          <img src="./img/logo.png" alt="" />
+          <div class="header__content">
+            <nav class="header__nav">
+              <a href="">Parties</a>
+              <a href="">how it works</a>
+              <a href="">Pricing</a>
+              <a href="">blog</a>
+              <a href="">Resources</a>
+            </nav>
+            <div class="header__btns">
+              <button class="log-in">Log in</button>
+              <button class="start">
+                <img src="./img/btn.svg" alt="" /> Get started
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="hero">
+      <div class="container">
+        <div class="hero">
+          <div class="hero__text">
+            <h1>A party so perfect you won’t believe</h1>
+            <p>
+              We provide hosts with tools to make elevating gatherings easier,
+              including party concepts, styled and shoppable decor, customized
+              guidelines, with timelines and checklists curated by the pros.
+            </p>
+            <hr />
+            <h3>We're all about DIY ease, not DIY</h3>
+            <div class="hero__btn">
+              <button class="one">
+                <img src="./img/btn.svg" alt="" />Start a party
+              </button>
+              <button class="two">How it works</button>
+            </div>
+          </div>
+          <img src="./img/IMAGE.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="works">
+      <div class="container">
+        <div class="works">
+          <img src="./img/works.png" alt="" />
+          <div class="works__text">
+            <h3>How it works</h3>
+            <h1>Pick your party</h1>
+            <hr />
+            <h2>Bring it to life</h2>
+            <p>
+              beyond the basics when it comes to throwing a party. Including a
+              unique, curated moment with links to purchase (think tablescape!),
+              food and beverage menus, conversation starters, and entertainment
+              – we've thought of everything so you don't have to.
+            </p>
+            <h1>Plan like a pro</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="slider">
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/swiperslide.png" alt="" />
+              <h1>Dinner for Two</h1>
+              <p>A romantic night in with your Valentine.</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/swiperslide.png" alt="" />
+              <h1>Dinner for Two</h1>
+              <p>A romantic night in with your Valentine.</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/swiperslide.png" alt="" />
+              <h1>Dinner for Two</h1>
+              <p>A romantic night in with your Valentine.</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/swiperslide.png" alt="" />
+              <h1>Dinner for Two</h1>
+              <p>A romantic night in with your Valentine.</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/swiperslide.png" alt="" />
+              <h1>Dinner for Two</h1>
+              <p>A romantic night in with your Valentine.</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
